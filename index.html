@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Binky Bets</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<style>
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#0B1220;
+  color:#F9FAFB;
+}
+
+/* HERO */
+.hero {
+  text-align:center;
+  padding:140px 20px 100px;
+  background: radial-gradient(circle at top, rgba(59,130,246,0.2), transparent);
+}
+
+.hero h1 {
+  font-size:56px;
+  font-weight:800;
+}
+
+.hero p {
+  color:#9CA3AF;
+  font-size:18px;
+  margin:20px 0 30px;
+}
+
+.btn {
+  background:#3B82F6;
+  padding:16px 34px;
+  border-radius:14px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  display:inline-block;
+  box-shadow:0 0 20px rgba(59,130,246,0.4);
+}
+
+.btn:hover {
+  box-shadow:0 0 35px rgba(96,165,250,0.7);
+  transform:translateY(-2px);
+}
+
+/* STRIP */
+.strip {
+  background:#111827;
+  text-align:center;
+  padding:15px;
+  font-weight:600;
+}
+
+/* SECTION */
+.section {
+  padding:90px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.center {
+  text-align:center;
+}
+
+/* GRID */
+.grid {
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card {
+  background:#1F2937;
+  padding:25px;
+  border-radius:16px;
+  width:280px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 0 25px rgba(59,130,246,0.3);
+}
+
+/* REVIEWS */
+.review {
+  background:#111827;
+  padding:20px;
+  border-radius:14px;
+  margin:10px auto;
+  max-width:500px;
+}
+
+/* STATS */
+.stats {
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
+.stat h2 {
+  color:#22C55E;
+  font-size:42px;
+}
+
+/* BIG CTA */
+.big-cta {
+  text-align:center;
+  padding:120px 20px;
+  background:linear-gradient(to bottom,#0B1220,#111827);
+}
+
+.big-cta h1 {
+  font-size:48px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Stop Guessing. Start Winning.</h1>
+  <p>AI-powered betting insights that beat the bookmakers.</p>
+  <a href="https://discord.gg/h8PrEFYG" class="btn">Join Free Discord</a>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="strip">
+  ⭐ 4.9/5 Rated • 2000+ Members • Proven Results
+</div>
+
+<!-- REVIEWS -->
+<section class="section center">
+  <h2>What Members Are Saying</h2>
+
+  <div class="review">“Made my money back in 2 days. Unreal.”</div>
+  <div class="review">“Best betting group I’ve ever been in.”</div>
+  <div class="review">“Actually consistent profits, not hype.”</div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+  <div class="grid">
+    <div class="card">
+      <h3>AI Predictions</h3>
+      <p>Advanced models analysing thousands of data points.</p>
+    </div>
+    <div class="card">
+      <h3>Easy Bets</h3>
+      <p>Copy our bets instantly and profit.</p>
+    </div>
+    <div class="card">
+      <h3>Consistent Edge</h3>
+      <p>Long-term profitable betting strategy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section center">
+  <h2>Performance</h2>
+
+  <div class="stats">
+    <div class="stat">
+      <h2>85%</h2>
+      <p>Win Rate</p>
+    </div>
+    <div class="stat">
+      <h2>+1200</h2>
+      <p>Units Profit</p>
+    </div>
+    <div class="stat">
+      <h2>2000+</h2>
+      <p>Members</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="big-cta">
+  <h1>Join Thousands Winning Daily</h1>
+  <p style="color:#9CA3AF;">Limited spots available</p>
+  <br>
+  <a href="https://discord.gg/h8PrEFYG" class="btn">Join Now</a>
+</section>
+
+<script>
+gsap.from(".hero h1",{y:-50,opacity:0,duration:1});
+gsap.from(".hero p",{y:20,opacity:0,delay:0.3});
+gsap.from(".btn",{opacity:0,delay:0.6});
+</script>
+
+</body>
+</html>
